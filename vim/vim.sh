@@ -1,3 +1,6 @@
+//去除
+:%s/[\s,=>"]//g
+
 //字段校验处理
 :%s/\(\w\+\)/$resume['basic']['\1'] = isset($postData['basic']['\1']) ? $postData['basic']['\1'] : $resume['basic']['\1'];/g
 
